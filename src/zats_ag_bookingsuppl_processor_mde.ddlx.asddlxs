@@ -1,0 +1,38 @@
+@Metadata.layer: #CUSTOMER
+@UI.headerInfo: {
+                    typeName: 'Booking Suppl',
+                    typeNamePlural: 'Booking Suppls',
+                    title: { value: 'booking_supplement_id' },
+                    description: { value: 'price' }
+                }
+annotate entity ZATS_AG_BOOKINGSUPPL_PROCESSOR with
+{
+  @UI.facet: [
+                { purpose: #STANDARD,
+                type: #IDENTIFICATION_REFERENCE,
+                position: 10,
+                label: 'BookingSuppl'
+                }
+             ]
+  @UI.identification: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  travel_id;
+  @UI.identification:  [{ position: 20 }]
+  @UI.lineItem: [{ position: 20 }]
+  booking_id;
+  @UI.identification:  [{ position: 30 }]
+  @UI.lineItem: [{ position: 30 }]
+  booking_supplement_id;
+  @UI.identification:  [{ position: 40 }]
+  @UI.lineItem: [{ position: 40 }]
+  supplement_id;
+  @UI.identification:  [{ position: 50 }]
+  @UI.lineItem: [{ position: 50 }]
+  price;
+  @UI.identification:  [{ position: 60 }]
+  @UI.lineItem: [{ position: 60 }]
+  currency_code;
+  @UI.identification:  [{ position: 70 }]
+  @UI.lineItem: [{ position: 70 }]
+  last_changed_at;
+}

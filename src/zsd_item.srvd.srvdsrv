@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For Item'
+define service ZSD_ITEM {
+  expose ZC_ITEM_02 as Item;
+}

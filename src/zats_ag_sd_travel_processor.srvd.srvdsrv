@@ -1,0 +1,12 @@
+@EndUserText.label: 'Service Definition For Travel'
+define service ZATS_AG_SD_TRAVEL_PROCESSOR {
+  expose ZATS_AG_TRAVEL_PROCESSOR       as Travel;
+  expose ZATS_AG_BOOKING_PROCESSOR      as Booking;
+  expose ZATS_AG_BOOKINGSUPPL_PROCESSOR as BookSupplement;
+  expose /DMO/I_Agency                  as Agency;
+  expose /DMO/I_Customer                as Customer;
+  expose /DMO/I_Overall_Status_VH       as OverallStatus;
+  expose /DMO/I_Carrier                 as Carrier;
+  expose /DMO/I_Connection              as Connection;
+  expose /DMO/I_Booking_Status_VH       as BookingStatus;
+}

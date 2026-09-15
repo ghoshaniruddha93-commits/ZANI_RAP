@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition For Sales order rank'
+define service ZATS_AG_sales_rank_sd {
+  expose ZATS_AG_sales_rank as salesrank;
+}
